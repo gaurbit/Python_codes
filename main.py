@@ -1,5 +1,8 @@
 # snake gun water game
+
+
 import random
+
 def game(comp, you):
     if comp == you:
         return None
@@ -20,6 +23,7 @@ def game(comp, you):
              return True
 
 print("Computer turn: Snake(s) Water(w) or Gung(G)?")
+
 randNo = random.randint(1,3)
 if randNo == 1:
     comp = 's'
@@ -32,8 +36,8 @@ you =  input("Your turn: Snake(s) Water(w) or Gung(G)?")
 
 a = game(comp , you)
 if a == None:
-    print("The game is a tie!")
+    print("The game is a tie, Better luck next time!")
 elif a == True:
-    print("You win!")
+    print("You Won!")
 else:
-    print("You lose!")
+    print("You Lose!")
