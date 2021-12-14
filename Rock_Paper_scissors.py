@@ -1,5 +1,8 @@
 # Rock Paper Scissors game
+
+
 import random
+
 def game(comp, you):
     if comp == you:
         return None
@@ -22,6 +25,7 @@ def game(comp, you):
 print("Computer turn: Rock(r) Paper(p) or Scissors(s)?")
 randNo = random.randint(1,3)
 print(randNo)
+
 if randNo == 1:
     comp = 'r'
 elif randNo == 2:
@@ -33,8 +37,8 @@ you =  input("Your turn: Rock(r) Paper(p) or Scissors(s)?")
 
 a = game(comp , you)
 if a == None:
-    print("The game is a tie!")
+    print("The game is a tie!, Better luck next timme")
 elif a == True:
-    print("You win!")
+    print("You Won!")
 else:
-    print("You lose!")
+    print("You Lose!")
